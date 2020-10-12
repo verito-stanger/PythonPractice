@@ -1,2 +1,2 @@
 # PythonPractice
-Repository for PP
+Repository for Python Lessons
