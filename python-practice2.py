@@ -15,3 +15,5 @@ try:
 except IndexError as identifier:
     print(f"FATAL ERROR: {identifier}")
 
+print(dictionary['cars'][2])
+
