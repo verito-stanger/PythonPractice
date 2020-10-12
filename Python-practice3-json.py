@@ -311,4 +311,4 @@ responseTwitter= {
    }
 }
 
-print(responseTwitter["statuses"][0]["entities"]["urls"][0])
+print(responseTwitter["statuses"][0]["entities"]["urls"][1])
