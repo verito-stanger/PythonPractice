@@ -311,4 +311,8 @@ responseTwitter= {
    }
 }
 
-print(responseTwitter["statuses"][0]["entities"]["urls"][0])
+response = responseTwitter["statuses"][0]["entities"]["urls"][1]
+#print(response) For printing the response content
+
+for key,values in response.items(): 
+   print(f"{key}:{values}")
