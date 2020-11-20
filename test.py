@@ -7,6 +7,7 @@ cuil = Cuil()
 #assert cuil.validar_cuit('20-95625072*3') == False, cuil.msj
 
 #assert cuil.validar_cuit('20-95625072-8') == False, cuil.msj
+print(cuil.validar_cuit2('20956250723'))
 
 assert cuil.validar_cuit2('20956250723') == True, cuil.msj
 

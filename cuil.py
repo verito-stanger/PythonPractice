@@ -1,4 +1,7 @@
 import re
+import pytest
+import json
+
 class Cuil:
     def validar_cuit(self, cuit):
         
@@ -63,3 +66,18 @@ class Cuil:
         else:
             self.msj = f"El validador del cuil es invalido, el numero validador debe ser {aux}"
             return False
+        
+
+    def openJson(self, file):
+        json_path = "C:\\Users\\v.a.serrano.diaz\\Desktop\\PythonPractice"+ "\\" + file + '.json'
+        try:
+            with open(json_path, encoding='utf-8') as read_file:
+                self.json_strings = json.loads(read_file.read())
+                print ("openJson: "+ json_path)
+                return self.json_strings
+        except FileNotFoundError:
+            return None
+        except ValueError:
+            return None 
+
+        
